@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Appli projets tutorés</string>
+    <string name="email">Votre email</string>
+    <string name="bvn">Bienvenue sur l\'application de notation des projets tutorés</string>
+    <string name="mdp">Votre mot de passe</string>
+    <string name="co">Connexion</string>
+    <string name="noposter">Numéro de poster</string>
+    <string name="texte">Chacune des trois notes doit etre comprise entre 0 et 5. Utilisez le champ <i>Commentaires</i> si nécessaire pour ajouter toute information que vous jugeriez utile.</string>
+    <string name="valider">Valider</string>
+    <string name="note">0 à 5</string>
+    <string name="commentaire">Commentaires </string>
+    <string name="qualité">Qualité de la présentation</string>
+    <string name="travail">Travail réalisé</string>
+    <string name="compétence">Compétences nouvelles</string>
+    <string name="err1">Une zone de texte est à completer (sauf commentaire)</string>
+    <string name="err2">Note(s) > 5</string>
+    <string name="ok">TOUT EST BON !</string>
+    <string name="bvn2">Bienvenue %1$s</string>
+</resources>

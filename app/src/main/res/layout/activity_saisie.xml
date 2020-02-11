@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaisieActivity">
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edt_noposter"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/noposter"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        />
+    
+    <TextView
+        android:id="@+id/txt_texte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/texte"
+        app:layout_constraintTop_toBottomOf="@id/edt_noposter"
+        app:layout_constraintBottom_toTopOf="@id/scroll"
+        android:textSize="20dp"
+        android:justificationMode="inter_word"
+        android:layout_margin="20dp"
+        />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_valider"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_texte">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutscroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txt_qualite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/qualité"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/edt_quali"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_travail"
+                android:layout_margin="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/travail"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/txt_qualite"
+                app:layout_constraintRight_toLeftOf="@id/edt_travail" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_competence"
+                android:layout_margin="20dp"
+                android:justificationMode="inter_word"
+                android:text="@string/compétence"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_travail"
+                app:layout_constraintRight_toLeftOf="@id/edt_comp" />
+
+            <EditText
+                android:id="@+id/edt_quali"
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:hint="@string/note"
+                app:layout_constraintBaseline_toBaselineOf="@id/txt_qualite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <EditText
+                android:id="@+id/edt_travail"
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:hint="@string/note"
+                app:layout_constraintBaseline_toBaselineOf="@id/txt_travail"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_qualite" />
+
+            <EditText
+                android:id="@+id/edt_comp"
+                android:inputType="number"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:hint="@string/note"
+                app:layout_constraintBaseline_toBaselineOf="@id/txt_competence"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_travail" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_comm"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:justificationMode="inter_word"
+                android:hint="@string/commentaire"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@id/txt_competence"
+                app:layout_constraintLeft_toLeftOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_valider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/valider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll"
+        android:onClick="valider"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

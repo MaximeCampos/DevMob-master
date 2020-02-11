@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">App for tutored projects</string>
+    <string name="email">Email</string>
+    <string name="bvn">Welcome to the scoring app for tutored projects</string>
+    <string name="mdp">Password</string>
+    <string name="co">Connection</string>
+    <string name="noposter">Poster number</string>
+    <string name="texte">Each of the three notes must be between 0 and 5. Use the <i>Comments</i> field if necessary to add any information you consider useful.</string>
+    <string name="valider">validate</string>
+    <string name="note">0 to 5</string>
+    <string name="commentaire">Comments</string>
+    <string name="qualité">Quality of the presentation</string>
+    <string name="travail">Work done</string>
+    <string name="compétence">New skills</string>
+    <string name="err1">Empty field</string>
+    <string name="err2">Note(s) > 5</string>
+    <string name="ok">ALL IS GOOD !</string>
+    <string name="bvn2">Welcome %1$s</string>
+</resources>
